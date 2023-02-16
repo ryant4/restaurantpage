@@ -8,4 +8,13 @@ module.exports = {
     },
     // I DONT KNOW WHAT THIS IS BUT IT RESOLVES THE WARNING
     mode: 'development',
+    
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            }
+        ]
+    }
 };
