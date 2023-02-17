@@ -39,7 +39,7 @@ body {
     margin-top: 40px;
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 0px 15px 40px -20px grey;
+    box-shadow: 0px 15px 40px -20px rgb(45, 44, 44);
 }
 
 
@@ -50,4 +50,9 @@ body {
 
 .menu-button-clicked {
     color: red;
+}
+
+
+#about-content {
+    justify-self: center;
 }

@@ -1,7 +1,6 @@
 export default function aboutUs() {
 
     const pageContent = document.getElementById('content');
-
     function createAboutCard(title, content) {
         const newCard = document.createElement('div');
         newCard.setAttribute('class', 'content-card');
