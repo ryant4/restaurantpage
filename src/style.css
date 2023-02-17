@@ -30,6 +30,11 @@ body {
     cursor: pointer;
 }
 
+li:hover {
+    color: red;;
+}
+    
+
 .content-card, 
 .menu-header-card, 
 .menu-item-card {

@@ -5,6 +5,9 @@ import aboutUs from './about.js';
 
 initialPageLoad();
 
+
+// aboutButton.classList.add('menu-button-clicked'). Similarly, instead of menuButton.removeAttribute('class', 'menu-button-clicked'), you can use menuButton.classList.remove('menu-button-clicked').
+
 const aboutButton = document.querySelector("#about-button");
 const menuButton = document.querySelector("#menu-button");
 const contactButton = document.querySelector("#contact-button");
@@ -20,10 +23,10 @@ setClickEvents();
 function aboutUsClick() {
     aboutUs();
     setClickEvents();
-    aboutButton.setAttribute('class', 'menu-button-clicked');
+    aboutButton.classList.add('menu-button-clicked');
     aboutButton.removeEventListener('click', aboutUsClick);
-    menuButton.removeAttribute('class', 'menu-button-clicked')
-    contactButton.removeAttribute('class', 'menu-button-clicked')
+    menuButton.classList.remove('menu-button-clicked');
+    contactButton.classList.remove('menu-button-clicked');
 };
 
 function menuButtonClick() {
@@ -33,17 +36,17 @@ function menuButtonClick() {
         card.parentElement.removeChild(card);
     });
     setClickEvents();
-    menuButton.setAttribute('class', 'menu-button-clicked');
+    menuButton.classList.add('menu-button-clicked');
     menuButton.removeEventListener('click', menuButtonClick);
-    aboutButton.removeAttribute('class', 'menu-button-clicked')
-    contactButton.removeAttribute('class', 'menu-button-clicked')
+    aboutButton.classList.remove('menu-button-clicked');
+    contactButton.classList.remove('menu-button-clicked');
 };
 
 function contactButtonClick() {
     //imported function
     setClickEvents();
-    contactButton.setAttribute('class', 'menu-button-clicked');
+    contactButton.classList.add('menu-button-clicked');
     contactButton.removeEventListener('click', contactButtonClick);
-    menuButton.removeAttribute('class', 'menu-button-clicked')
-    aboutButton.removeAttribute('class', 'menu-button-clicked')
+    menuButton.classList.remove('menu-button-clicked');
+    aboutButton.classList.remove('menu-button-clicked');
 };
