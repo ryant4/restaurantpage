@@ -29,7 +29,9 @@ body {
     font-weight: 700;
 }
 
-.content-card {
+.content-card, 
+.menu-header-card, 
+.menu-item-card {
     width: 500px;
     border-radius: .5rem;
     background-color: white;
@@ -44,4 +46,8 @@ body {
 .content-card>h2 {
     font-size: 2rem;
     margin-bottom: 12px;
+}
+
+.menu-button-clicked {
+    color: red;
 }

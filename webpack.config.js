@@ -1,9 +1,13 @@
 const path = require('path');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        index: './src/index.js',
+        initialload: './src/initialload.js',
+        about: './src/about.js'
+    },
     output: {
-        filename: 'main.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
     // I DONT KNOW WHAT THIS IS BUT IT RESOLVES THE WARNING
