@@ -1,7 +1,12 @@
 body {
     background-image: url(./images/background_offwhite.jpg);
+    padding-bottom: 60px;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+}
 #content {
     display: grid;
     grid-template-rows: min-content;
@@ -15,9 +20,9 @@ body {
 }
 
 #logo-container {
-    font-size: 4.5rem;
-    text-align: center;
+    width: 210px;
     margin: 30px 30px;
+    align-self: center;
 }
 
 #main-menu>ul {
@@ -80,4 +85,8 @@ li:hover {
 
 #about-content {
     justify-self: center;
+}
+
+#footer {
+    height: 50px;
 }

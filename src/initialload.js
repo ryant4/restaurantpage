@@ -1,12 +1,14 @@
+import Logo from './images/logo.png'
+
 export default function initialPageLoad() {
     const pageContent = document.querySelector('#content');
 
     const header = document.createElement('header');
     pageContent.appendChild(header);
 
-    const headerLogo = document.createElement('div');
+    const headerLogo = document.createElement('img');
     headerLogo.setAttribute('id', 'logo-container');
-    headerLogo.innerHTML = "LOGO";
+    headerLogo.src = Logo;
     header.appendChild(headerLogo);
 
     const menuBorder = document.createElement('div');

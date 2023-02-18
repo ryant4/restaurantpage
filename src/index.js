@@ -5,6 +5,10 @@ import aboutUs from './about.js';
 import contactInfo from './contact.js';
 import menuMaker from './menu';
 
+const pageBody = document.querySelector('body');
+const contentDiv = document.createElement('div');
+contentDiv.setAttribute('id', 'content');
+pageBody.appendChild(contentDiv);
 initialPageLoad();
 
 const aboutButton = document.querySelector("#about-button");
