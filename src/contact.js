@@ -14,7 +14,7 @@ export default function contactInfo() {
         pageContent.appendChild(newCard);
     }
 
-    createAboutCard("Phone", "646-646-6464")
+    createAboutCard("Phone", "(646) 646-6464")
     createAboutCard("Email", "brooklynrestaurant@gmail.com");
     createAboutCard("Location", "89 Bedford Ave <br> Brooklyn, NY 11222");
 }
