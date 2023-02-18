@@ -14,7 +14,7 @@ export default function aboutUs() {
     }
 
     const hours = "Monday: Closed <br> Tuesday: Closed <br> Wednesday: Closed <br> Thursday: Closed <br> Friday: Closed <br> Saturday: Closed <br> Sunday: 11am-4pm"
-    createAboutCard("Our History", "We're old as shit, you should come here.");
+    createAboutCard("Our History", "We're super old, so you should come here. We don't really care either way.");
     createAboutCard("Hours", hours);
 
 };

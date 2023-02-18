@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://fiveleavesny.com/static/images/frontend/background_offwhite.jpg);
+    background-image: url(./images/background_offwhite.jpg);
 }
 
 #content {
@@ -35,10 +35,8 @@ li:hover {
 }
     
 
-.content-card, 
-.menu-header-card, 
-.menu-item-card {
-    width: 500px;
+.content-card {
+    width: 600px;
     border-radius: .5rem;
     background-color: white;
     justify-self: center;
@@ -46,13 +44,34 @@ li:hover {
     padding: 20px;
     box-sizing: border-box;
     box-shadow: 0px 15px 40px -20px rgb(4, 4, 4);
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 3rem auto;
+    grid-template-areas: 
+        "title photo photo"
+        "content photo photo";
 }
 
 
 .content-card>h2 {
     font-size: 2rem;
     margin-bottom: 12px;
+    grid-area: title;
 }
+
+.content-card>p {
+    grid-area: content;
+    line-height: 1.4rem;
+}
+
+.content-card>img {
+    grid-area: photo;
+    height: 150px;
+    width: auto;
+    border-radius: .5rem;
+    margin-left: 20px;
+}
+
 
 .menu-button-clicked {
     color: red;

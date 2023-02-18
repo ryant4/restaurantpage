@@ -2,11 +2,10 @@ import './css-reset.css';
 import './style.css';
 import initialPageLoad from './initialload.js';
 import aboutUs from './about.js';
+import contactInfo from './contact.js';
+import menuMaker from './menu';
 
 initialPageLoad();
-
-
-// aboutButton.classList.add('menu-button-clicked'). Similarly, instead of menuButton.removeAttribute('class', 'menu-button-clicked'), you can use menuButton.classList.remove('menu-button-clicked').
 
 const aboutButton = document.querySelector("#about-button");
 const menuButton = document.querySelector("#menu-button");
@@ -21,6 +20,10 @@ function setClickEvents() {
 setClickEvents();
 
 function aboutUsClick() {
+    const grabCardsToClear = document.querySelectorAll(".content-card");
+    grabCardsToClear.forEach((card) => {
+        card.parentElement.removeChild(card);
+    });
     aboutUs();
     setClickEvents();
     aboutButton.classList.add('menu-button-clicked');
@@ -30,11 +33,11 @@ function aboutUsClick() {
 };
 
 function menuButtonClick() {
-    // imported function
     const grabCardsToClear = document.querySelectorAll(".content-card");
     grabCardsToClear.forEach((card) => {
         card.parentElement.removeChild(card);
     });
+    menuMaker();
     setClickEvents();
     menuButton.classList.add('menu-button-clicked');
     menuButton.removeEventListener('click', menuButtonClick);
@@ -43,7 +46,11 @@ function menuButtonClick() {
 };
 
 function contactButtonClick() {
-    //imported function
+    const grabCardsToClear = document.querySelectorAll(".content-card");
+    grabCardsToClear.forEach((card) => {
+        card.parentElement.removeChild(card);
+    });
+    contactInfo();
     setClickEvents();
     contactButton.classList.add('menu-button-clicked');
     contactButton.removeEventListener('click', contactButtonClick);
