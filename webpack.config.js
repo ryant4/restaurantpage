@@ -19,8 +19,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
-    // I DONT KNOW WHAT THIS IS BUT IT RESOLVES THE WARNING
-    mode: 'development',
+    mode: 'production',
     
     module: {
         rules: [
